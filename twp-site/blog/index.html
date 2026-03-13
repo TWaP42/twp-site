@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Tiny Whale and Petunia</title>
+  <meta name="description" content="Updates, thoughts, and behind-the-scenes from Tiny Whale and Petunia. Follow along as we build.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">tiny whale <span>&</span> petunia</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/apps/">Apps</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <p class="page-header-eyebrow animate-fade-up">Blog</p>
+      <h1 class="page-header-title animate-fade-up delay-1">Building in public</h1>
+      <p class="page-header-subtitle animate-fade-up delay-2">Updates, lessons learned, and the occasional rant about healthcare systems. Follow along as we build.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Placeholder post 1 -->
+        <article class="blog-card animate-fade-up delay-1">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, var(--coral-light), var(--teal-light)); display: flex; align-items: center; justify-content: center;">
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--ink); opacity: 0.4;">Coming Soon</div>
+          </div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">March 2026</p>
+            <h3 class="blog-card-title">Why I built a health app with no coding experience</h3>
+            <p class="blog-card-excerpt">The story of how lived experience, frustration with the status quo, and vibe coding came together to create Undisputed.</p>
+          </div>
+        </article>
+
+        <!-- Placeholder post 2 -->
+        <article class="blog-card animate-fade-up delay-2">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, var(--gold-light), var(--coral-light)); display: flex; align-items: center; justify-content: center;">
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--ink); opacity: 0.4;">Coming Soon</div>
+          </div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">March 2026</p>
+            <h3 class="blog-card-title">What "self-advocacy" actually means when you're chronically ill</h3>
+            <p class="blog-card-excerpt">It's not about being difficult. It's about showing up with a record that can't be dismissed.</p>
+          </div>
+        </article>
+
+        <!-- Placeholder post 3 -->
+        <article class="blog-card animate-fade-up delay-3">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, var(--teal-light), var(--gold-light)); display: flex; align-items: center; justify-content: center;">
+            <div style="font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--ink); opacity: 0.4;">Coming Soon</div>
+          </div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">March 2026</p>
+            <h3 class="blog-card-title">The privacy minefield of health apps in Canada</h3>
+            <p class="blog-card-excerpt">PIPEDA, PHIPA, CASL, AODA — what I learned navigating Canadian compliance as a solo developer.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Empty state message -->
+      <div class="animate-fade-up delay-4" style="text-align: center; margin-top: 64px; padding: 48px 28px; background: var(--off-white); border-radius: 20px;">
+        <div style="font-size: 2rem; margin-bottom: 16px;">✍️</div>
+        <h3 style="font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; margin-bottom: 12px;">Blog posts are on the way</h3>
+        <p style="color: var(--ink-muted); max-width: 460px; margin: 0 auto 24px; font-size: 0.95rem; line-height: 1.7;">We're putting the finishing touches on our first posts. Want to know when they drop?</p>
+        <a href="/contact.html" class="btn btn-primary">Drop us a line →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">tiny whale <span>&</span> petunia</div>
+          <p class="footer-desc">Independent app studio based in Toronto. Building bold software for underserved communities.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/apps/">Apps</a>
+            <a href="/blog/">Blog</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Apps</div>
+          <div class="footer-links">
+            <a href="/apps/undisputed/">Undisputed</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span>&copy; 2026 Tiny Whale and Petunia. All rights reserved.</span>
+        <span>Toronto, Ontario, Canada</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Tiny Whale and Petunia</title>
+  <meta name="description" content="Get in touch with Tiny Whale and Petunia. Questions, feedback, collaboration — we'd love to hear from you.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">tiny whale <span>&</span> petunia</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/apps/">Apps</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact.html" class="active">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <p class="page-header-eyebrow animate-fade-up">Contact</p>
+      <h1 class="page-header-title animate-fade-up delay-1">Let's talk</h1>
+      <p class="page-header-subtitle animate-fade-up delay-2">Questions, feedback, bug reports, collaboration ideas — whatever it is, we'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info animate-fade-up">
+          <h3>Reach out directly</h3>
+          <p>We're a small, independent studio and we read every message. If you're reporting a bug, please include as much detail as you can — what you were doing, what happened, and what device/browser you were using.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value"><a href="mailto:info@tinywhaleandpetunia.com">info@tinywhaleandpetunia.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Location</div>
+              <div class="contact-detail-value">Toronto, Ontario, Canada</div>
+            </div>
+          </div>
+
+          <div class="contact-detail" style="border-bottom: none;">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Website</div>
+              <div class="contact-detail-value"><a href="/">tinywhaleandpetunia.com</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form animate-fade-up delay-2">
+          <h3 style="font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; margin-bottom: 24px;">Send a message</h3>
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-input" type="text" id="subject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message →</button>
+          </form>
+          <p style="font-size: 0.78rem; color: var(--ink-muted); margin-top: 16px; line-height: 1.6;">By sending this message, you consent to us using your email address to respond to your inquiry. We will not add you to any mailing list without your explicit permission.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">tiny whale <span>&</span> petunia</div>
+          <p class="footer-desc">Independent app studio based in Toronto. Building bold software for underserved communities.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/apps/">Apps</a>
+            <a href="/blog/">Blog</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Apps</div>
+          <div class="footer-links">
+            <a href="/apps/undisputed/">Undisputed</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span>&copy; 2026 Tiny Whale and Petunia. All rights reserved.</span>
+        <span>Toronto, Ontario, Canada</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps — Tiny Whale and Petunia</title>
+  <meta name="description" content="Apps built by Tiny Whale and Petunia. Bold tools for underserved communities.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">tiny whale <span>&</span> petunia</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/apps/" class="active">Apps</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <p class="page-header-eyebrow animate-fade-up">Our Apps</p>
+      <h1 class="page-header-title animate-fade-up delay-1">What we're building</h1>
+      <p class="page-header-subtitle animate-fade-up delay-2">Every app starts with someone who needed it and couldn't find it. Here's what we've made so far.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="app-grid">
+
+        <!-- Undisputed -->
+        <div class="app-card animate-fade-up delay-1">
+          <div class="app-card-accent" style="background: linear-gradient(90deg, var(--coral), var(--teal));"></div>
+          <div class="app-card-icon" style="background: var(--coral-light); color: var(--coral);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="app-card-title">Undisputed</h3>
+          <p class="app-card-tagline">Your health story. Undisputed.</p>
+          <div style="display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap;">
+            <span class="badge badge-coral">Health</span>
+            <span class="badge badge-teal">Self-Advocacy</span>
+            <span class="badge badge-gold">Journaling</span>
+          </div>
+          <p class="app-card-desc">A self-advocacy journal for people living with complex, chronic, and multi-system conditions. Walk into every appointment prepared, organized, and impossible to dismiss.</p>
+          <a href="/apps/undisputed/" class="app-card-link">
+            Learn more
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <!-- Coming Soon placeholder -->
+        <div class="app-card animate-fade-up delay-2" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 360px; border-style: dashed; border-color: var(--cream);">
+          <div style="font-size: 2.5rem; margin-bottom: 16px; opacity: 0.3;">🚧</div>
+          <h3 class="app-card-title" style="color: var(--ink-muted);">More coming soon</h3>
+          <p class="app-card-desc" style="max-width: 280px;">We're always building. Follow our blog for updates on what's next.</p>
+          <a href="/blog/" class="app-card-link" style="color: var(--teal);">
+            Follow along
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">tiny whale <span>&</span> petunia</div>
+          <p class="footer-desc">Independent app studio based in Toronto. Building bold software for underserved communities.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/apps/">Apps</a>
+            <a href="/blog/">Blog</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Apps</div>
+          <div class="footer-links">
+            <a href="/apps/undisputed/">Undisputed</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span>&copy; 2026 Tiny Whale and Petunia. All rights reserved.</span>
+        <span>Toronto, Ontario, Canada</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
