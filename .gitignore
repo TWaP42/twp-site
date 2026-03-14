@@ -3,3 +3,11 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
+
+# Ignore everything in home directory except Documents
+/*
+!/Documents
+!/.gitignore
+
+# Ignore zip files in project directory
+Documents/TWaP-Site/*.zip

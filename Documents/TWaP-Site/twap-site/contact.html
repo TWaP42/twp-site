@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Tiny Whale and Petunia</title>
+  <meta name="description" content="Get in touch with Tiny Whale and Petunia. Questions, feedback, partnerships — we'd love to hear from you." />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.jpg" alt="Tiny Whale and Petunia logo" class="nav-logo" />
+      <span class="nav-name">Tiny Whale and Petunia</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="undisputed.html">Undisputed</a></li>
+      <li><a href="literal-voice.html">Literal Voice</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="section" style="padding-top: 5rem;">
+  <div style="margin-bottom: 4rem;">
+    <p class="section-label fade-up">Get in touch</p>
+    <h1 class="fade-up fade-up-1" style="max-width: 16ch;">We'd love to hear from you.</h1>
+    <p class="fade-up fade-up-2" style="max-width: 48ch; margin-top: 0.75rem;">Questions about our apps, feedback, bug reports, partnership ideas — drop us a line and we'll get back to you as soon as we can.</p>
+  </div>
+
+  <div class="contact-layout">
+
+    <!-- LEFT: Info -->
+    <div class="contact-info">
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          <a href="mailto:info@tinywhaleandpetunia.com">info@tinywhaleandpetunia.com</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Location</strong>
+          <span>Toronto, Ontario, Canada</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Response time</strong>
+          <span>Usually within 2–3 business days</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; padding: 1.5rem; background: var(--teal-xs); border-radius: var(--radius); border: 1px solid var(--cream-dk);">
+        <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Have a bug to report?</h3>
+        <p style="font-size: 0.875rem; margin: 0;">Select "Bug Report" in the form and tell us exactly what happened — what you were doing, what you expected, and what actually occurred. Screenshots are always helpful.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div>
+      <div class="contact-form" id="contact-form-wrap">
+        <h2 style="font-size: 1.4rem; margin-bottom: 1.75rem;">Send a message</h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+          <!-- Replace YOUR_ACCESS_KEY_HERE with your Web3Forms access key from web3forms.com -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <input type="hidden" name="subject" value="New message via tinywhaleandpetunia.com" />
+          <input type="hidden" name="from_name" value="TWaP Website" />
+          <input type="checkbox" name="botcheck" style="display:none;" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Topic</label>
+            <select id="subject" name="topic">
+              <option value="">— Select a topic —</option>
+              <option value="General question">General question</option>
+              <option value="Undisputed — feedback or support">Undisputed — feedback or support</option>
+              <option value="Literal Voice — feedback or support">Literal Voice — feedback or support</option>
+              <option value="Bug report">Bug report</option>
+              <option value="Partnership or press inquiry">Partnership or press inquiry</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            Send message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+          </button>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Message sent!</h3>
+          <p>Thanks for reaching out. We'll be in touch within 2–3 business days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="assets/logo.jpg" alt="TWaP logo" class="footer-logo" />
+          <span class="footer-name">Tiny Whale and Petunia</span>
+        </div>
+        <p class="footer-tagline">Thoughtful apps for people who think differently.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="undisputed.html">Undisputed</a></li>
+          <li><a href="literal-voice.html">Literal Voice</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="undisputed-privacy.html">Undisputed Privacy</a></li>
+          <li><a href="undisputed-tos.html">Undisputed Terms</a></li>
+          <li><a href="literal-voice-privacy.html">Literal Voice Privacy</a></li>
+          <li><a href="literal-voice-tos.html">Literal Voice Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:info@tinywhaleandpetunia.com">info@tinywhaleandpetunia.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Tiny Whale and Petunia. All rights reserved.</p>
+      <p>Toronto, Canada · <a href="mailto:info@tinywhaleandpetunia.com">info@tinywhaleandpetunia.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: new FormData(form)
+        });
+        const data = await res.json();
+        if (data.success) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        } else {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+          alert('Something went wrong. Please email us directly at info@tinywhaleandpetunia.com');
+        }
+      } catch {
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+        alert('Something went wrong. Please email us directly at info@tinywhaleandpetunia.com');
+      }
+    });
+  }
+</script>
+</body>
+</html>
